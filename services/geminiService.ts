@@ -62,7 +62,7 @@ const initializeChat = async (): Promise<void> => {
   if (!chat) { // Initialize chat only if it hasn't been, or if it needs re-initialization
     try {
       chat = currentAi.chats.create({
-        model: 'gemini-2.5-flash-preview-04-17',
+        model: 'gemini-2.0-flash',
         config: {
           systemInstruction: TEJASWI_MAHADEV_SYSTEM_PROMPT,
         },
